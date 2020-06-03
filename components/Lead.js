@@ -13,7 +13,7 @@ const Lead = () => {
       }}
     >
       <Heading variant="largeHeading" as="h1">
-        IT’S TIME TO BUILD234
+        IT’S TIME TO BUILD567
       </Heading>
       <Text variant="bodyLarge" sx={{ my: 3 }}>
         Every Western institution was unprepared for the coronavirus pandemic,
