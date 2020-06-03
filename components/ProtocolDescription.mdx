@@ -1,0 +1,21 @@
+import { Container, Text, Grid, Flex, Heading } from 'theme-ui';
+import { Icon } from '@makerdao/dai-ui-icons';
+
+export const TextWithIcon = ({ children }) => (
+  <Flex sx={{ alignItems: 'center' }}>
+    <Icon name="checkmark" color="onBackground" />
+    <Text ml={3}>{children}</Text>
+  </Flex>
+);
+
+<Container variant="landingContainer" sx={{ py: [4, 6], my: 4 }}>
+
+<Heading sx={{ fontSize: [6, 7] }}>Why is the modern world so ugly?</Heading>
+
+<Text variant="bodyLarge">
+
+One of the great generalisations we can make about the modern world is that it is, to an extraordinary degree, an ugly world. If we were to show an ancestor from 250 years ago around our cities and suburbs, they would be amazed at our technology, impressed by our wealth, stunned by our medical advances – and shocked and disbelieving at the horrors we had managed to build. Societies that are, in most respects, hugely more advanced than those of the past have managed to construct urban environments more dispiriting, chaotic and distasteful than anything humanity has ever known.
+
+</Text>
+  
+</Container>
