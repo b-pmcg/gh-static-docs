@@ -5,10 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
+    "export": "next export -o docs",
     "start": "next start",
-    "test": "jest",
-    "deploy-gh": "next build && next export -o docs && touch docs/.nojekyll"
+    "test": "jest"
   },
   "dependencies": {
     "@makerdao/dai-ui-icons": "^0.0.37",
