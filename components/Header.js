@@ -3,6 +3,12 @@ import { jsx, NavLink, Flex, Container, Link as ThemeLink } from 'theme-ui';
 import Link from 'next/link';
 import { Icon } from '@makerdao/dai-ui-icons';
 
+const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX;
+
+const PrefixedLink = ({ href, ...rest }) => (
+  <Link href={href} as={`${assetPrefix}${href}`} {...rest} />
+);
+
 const LINKS = [
   { url: '/', name: 'Home' },
   { url: '/docs/introduction', name: 'Docs' },
@@ -19,7 +25,7 @@ const Header = () => {
           mb: [2, 4],
         }}
       >
-        <Link href="/" passHref>
+        <PrefixedLink href="/" passHref>
           <ThemeLink sx={{ color: 'onSurface' }}>
             <Icon
               name="logo_only"
@@ -36,7 +42,7 @@ const Header = () => {
               sx={{ display: ['none', 'block'] }}
             />
           </ThemeLink>
-        </Link>
+        </PrefixedLink>
         <Flex
           as="nav"
           sx={{
@@ -45,9 +51,9 @@ const Header = () => {
           }}
         >
           {LINKS.map(({ url, name }) => (
-            <Link href={url} passHref key={url}>
+            <PrefixedLink href={url} passHref key={url}>
               <NavLink sx={{ '&:last-child': { pr: 0 } }}>{name}</NavLink>
-            </Link>
+            </PrefixedLink>
           ))}
         </Flex>
       </Flex>
