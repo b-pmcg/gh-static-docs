@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "test": "jest"
+    "test": "jest",
+    "deploy-gh": "next build && next export -o docs && touch docs/.nojekyll"
   },
   "dependencies": {
     "@makerdao/dai-ui-icons": "^0.0.37",
