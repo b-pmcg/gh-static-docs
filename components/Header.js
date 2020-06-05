@@ -10,7 +10,7 @@ const PrefixedLink = ({ href, ...rest }) => (
 );
 
 const LINKS = [
-  { url: '/', name: 'Home' },
+  { url: '/', name: 'Phone Home' },
   { url: '/docs/introduction', name: 'Docs' },
   { url: '/faq', name: 'FAQs' },
   { url: '/stats', name: 'Stats' },

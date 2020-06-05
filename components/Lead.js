@@ -16,10 +16,7 @@ const Lead = () => {
         IT’S TIME TO BUILD1A1B1C
       </Heading>
       <Text variant="bodyLarge" sx={{ my: 3 }}>
-        Every Western institution was unprepared for the coronavirus pandemic,
-        despite many prior warnings. This monumental failure of institutional
-        effectiveness will reverberate for the rest of the decade, but it’s not
-        too early to ask why, and what we need to do about it.
+        TONS OF NEW TEXT HERE 123 123 123
       </Text>
       <Link href="/docs/introduction">
         <Button as="a" variant="textual">
